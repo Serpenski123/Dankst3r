@@ -11,3 +11,6 @@ I've tested this on Ubuntu Server 14.04.3 and Windows 10 Enterprise, but it shou
 If you want to run it strait from command line, type "node Drive:/path/to/run.js" or what every directory pointing format your operating system uses (windows "C:/path/" mac os x "/path/")
 
 As always, helpful cirticism is always appreciated. Also please go easy on me, this is my first true github upload...
+
+# How To Contribute
+After using the bot for a while, if you feel you have a good meme to add to the list, you can simply make a new branch, and add your version with the new meme(s). If there is already another branch, check out that version, and see if you can add it on there, also critique that branches memes that were added on.
