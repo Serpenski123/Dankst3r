@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+//These instructions are needed for the future https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token
 
 //var admin = "<@261329374295359499>" 
 //Enabe Dev mode in discord (User Settings -> Appearance) right click your name in any server, and click copy id, paste after the @ sign
