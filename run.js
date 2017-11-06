@@ -5,6 +5,8 @@ const bot = new Discord.Client();
 //var admin = "<@261329374295359499>" 
 //Enabe Dev mode in discord (User Settings -> Appearance) right click your name in any server, and click copy id, paste after the @ sign
 
+var links = ["http://i.imgur.com/Y4IrhnX.jpg", "http://i.imgur.com/RhB8BNN.jpg", "http://i.imgur.com/8sP7wvD.jpg", "http://i.imgur.com/1p62KyE.jpg", "http://i.imgur.com/KinShBK.jpg", "http://i.imgur.com/QYhXjwf.jpg", "http://i.imgur.com/ZYrKFIT.png”, “http://i.imgur.com/gl6sqLD.jpg”, “http://i.imgur.com/gl6sqLD.jpg”, “http://i.imgur.com/OvLcZcz.jpg”, “http://i.imgur.com/ipp96v2.jpg”, “http://i.imgur.com/ipp96v2.jpg", "http://cdn.ebaumsworld.com/thumbs/gallery/604025/85286183.jpg", "http://cdn.ebaumsworld.com/thumbs/gallery/604025/85286183.jpg", "https://s-media-cache-ak0.pinimg.com/736x/14/80/66/14806673dafe7e68efd1692d2de9e3d6--dankest-memes-ever-the-dankest-of-memes.jpg", "https://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/12724771_614537552018311_1659819414_n.jpg?ig_cache_key=MTE5Mjc0NjA4NTg1NDE2MDQxMQ%3D%3D.2", "http://i2.kym-cdn.com/photos/images/newsfeed/001/210/465/515", "https://s-media-cache-ak0.pinimg.com/736x/67/f3/a7/67f3a775ef3bea1c022c5b62d0741c63--dankest-memes-funny-memes.jpg", "https://data.whicdn.com/images/261235712/original.jpg", "http://i.imgur.com/c3JIa9T.jpg", "https://thechive.files.wordpress.com/2016/06/dank-memes-for-the-weekend-32-photos-301.jpg?quality=85&strip=info&w=600", "https://s-media-cache-ak0.pinimg.com/736x/73/63/8c/73638c9f5ad69a6c41a54ea572879a33--dankest-memes-not-funny.jpg", "https://thechive.files.wordpress.com/2017/05/memes-35-photos-21.jpg?quality=85&strip=info&w=600", "http://i.imgur.com/FLjlsTi.jpg", "https://i.redd.it/kc8fl1m13jqy.jpg", "https://media0.giphy.com/media/O9MbF5sHocC8U/giphy.gif", "https://media0.giphy.com/media/XVfFQ2CNyRmV2/giphy.gif", "http://i.imgur.com/xvsng0l.gif", "https://media.tenor.com/images/c8620750bbd41041b86813b74a386c73/tenor.gif"];
+
 bot.on('ready', () => {
 	bot.user.setStatus("online", "!~help for commands");
 	console.log("online status set");
@@ -72,111 +74,9 @@ bot.on('message', message => {
 		}
 	if (message.content === "!~meme")
 		{
-			var randimg = Math.floor(Math.random() * 26) + 1
-			if (randimg == 1)
-				{
-					message.channel.sendMessage("http://i.imgur.com/Y4IrhnX.jpg");
-				}
-			if (randimg == 2)
-				{
-					message.channel.sendMessage("http://i.imgur.com/RhB8BNN.jpg");
-				}
-			if (randimg == 3)
-				{
-					message.channel.sendMessage("http://i.imgur.com/8sP7wvD.jpg");
-				}
-			if (randimg == 4)
-				{
-					message.channel.sendMessage("http://i.imgur.com/1p62KyE.jpg");
-				}
-			if (randimg == 5)
-				{
-					message.channel.sendMessage("http://i.imgur.com/KinShBK.jpg");
-				}
-			if (randimg == 6)
-				{
-					message.channel.sendMessage("http://i.imgur.com/QYhXjwf.jpg");
-				}
-			if (randimg == 7)
-				{
-					message.channel.sendMessage("http://i.imgur.com/ZYrKFIT.png");
-				}
-			if (randimg == 8)
-				{
-					message.channel.sendMessage("http://i.imgur.com/gl6sqLD.jpg");
-				}
-			if (randimg == 9)
-				{
-					message.channel.sendMessage("http://i.imgur.com/OvLcZcz.jpg");
-				}
-			if (randimg == 10)
-				{
-					message.channel.sendMessage("http://i.imgur.com/ipp96v2.jpg");
-				}
-			if (randimg == 11)
-				{
-					message.channel.sendMessage("http://cdn.ebaumsworld.com/thumbs/gallery/604025/85286183.jpg")
-				}
-			if (randimg == 12)
-				{
-					message.channel.sendMessage("https://s-media-cache-ak0.pinimg.com/736x/14/80/66/14806673dafe7e68efd1692d2de9e3d6--dankest-memes-ever-the-dankest-of-memes.jpg");
-				}
-			if (randimg == 13)
-				{
-					message.channel.sendMessage("https://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/12724771_614537552018311_1659819414_n.jpg?ig_cache_key=MTE5Mjc0NjA4NTg1NDE2MDQxMQ%3D%3D.2");
-				}
-			if (randimg == 14)
-				{
-					message.channel.sendMessage("http://i2.kym-cdn.com/photos/images/newsfeed/001/210/465/515");
-				}
-			if (randimg == 15)
-				{
-					message.channel.sendMessage("https://s-media-cache-ak0.pinimg.com/736x/67/f3/a7/67f3a775ef3bea1c022c5b62d0741c63--dankest-memes-funny-memes.jpg");
-				}
-			if (randimg == 16)
-				{
-					message.channel.sendMessage("https://data.whicdn.com/images/261235712/original.jpg");
-				}
-			if (randimg == 17)
-				{
-					message.channel.sendMessage("http://i.imgur.com/c3JIa9T.jpg");
-				}
-			if (randimg == 18)
-				{
-					message.channel.sendMessage("https://thechive.files.wordpress.com/2016/06/dank-memes-for-the-weekend-32-photos-301.jpg?quality=85&strip=info&w=600");
-				}
-			if (randimg == 19)
-				{
-					message.channel.sendMessage("https://s-media-cache-ak0.pinimg.com/736x/73/63/8c/73638c9f5ad69a6c41a54ea572879a33--dankest-memes-not-funny.jpg");
-				}
-			if (randimg == 20)
-				{
-					message.channel.sendMessage("https://thechive.files.wordpress.com/2017/05/memes-35-photos-21.jpg?quality=85&strip=info&w=600");
-				}
-			if (randimg == 21)
-				{
-					message.channel.sendMessage("http://i.imgur.com/FLjlsTi.jpg");
-				}
-			if (randimg == 22)
-				{
-					message.channel.sendMessage("https://i.redd.it/kc8fl1m13jqy.jpg");
-				}
-			if (randimg == 23)
-				{
-					message.channel.sendMessage("https://media0.giphy.com/media/O9MbF5sHocC8U/giphy.gif");
-				}
-			if (randimg == 24)
-				{
-					message.channel.sendMessage("https://media0.giphy.com/media/XVfFQ2CNyRmV2/giphy.gif");
-				}
-			if (randimg == 25)
-				{
-					message.channel.sendMessage("http://i.imgur.com/xvsng0l.gif");
-				}
-			if (randimg == 26)
-				{
-					message.channel.sendMessage("https://media.tenor.com/images/c8620750bbd41041b86813b74a386c73/tenor.gif");
-				}
+			var randimg = Math.floor(Math.random() * 26)
+			message.channel.sendMessage(links[randimg]);
+	
 		}
 });
 
